@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="user-input">
+        <div class="container">
+            <div>
+                <label for="categories">Choose a category:</label>
+                <select name="categories" size="1" id="categories">
+                    <option value="all">random</option>
+                </select>
+            </div>
+            <div>
+                <label for="number">How many quotes: </label>
+                <input name="number" id="number" type="number" max="10" min="1" placeholder="value 1-10">
+            </div>
+        </div>
+        <button id="button">Get My Quotes!</button>
+    </section>
+    
+    <section id="quotes-container">
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

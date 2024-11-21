@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+#user-input {
+    width: 100%;
+    background-color: aliceblue;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    justify-content: space-around;
+}
+
+
+
+select, input{
+    width: 150px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#user-input button{
+    width: 50%;
+    margin: 20px auto 10px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 26px;
+    border: 3px solid lightblue;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+#user-input button:hover, #user-input button:active{
+    border: 3px solid blue;
+    background-color: slategray;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+#quotes-container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px;
+    background-color: aliceblue;
+    padding: 20px 20px 40px;
+    position: relative;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border: 3px solid blue;
+}
+
+.quote{
+    font-size: 26px;
+    line-height: 1.6;
+}
+
+.author {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+    padding-left: 150px;
+}
+
+.category {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 785px){
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        font-size: 18px;
+        
+    }
+    .container div{
+        margin-top: 10px;
+    }
+    #user-input button {
+        font-size: 18px;
+    }
+    .quote{
+        font-size: 20px;
+    }
+    .author {
+        font-size: 18px;
+    }
+    .category {
+        font-size: 16px;
+    }
+    
+}
